@@ -1,0 +1,14 @@
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\bin\Debug\F_Task.exe.config
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\bin\Debug\F_Task.exe
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\bin\Debug\F_Task.pdb
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task.csprojResolveAssemblyReference.cache
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\MainWindow.g.cs
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\App.g.cs
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task_MarkupCompile.cache
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task_MarkupCompile.lref
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\MainWindow.baml
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task.g.resources
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task.Properties.Resources.resources
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task.csproj.GenerateResource.Cache
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task.exe
+c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task.pdb
