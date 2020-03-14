@@ -43,6 +43,7 @@ namespace F_Task
             PushAll();
         }
 
+        // Search Items In LST
         private void TXTSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
             // Search Items In LST
@@ -52,8 +53,9 @@ namespace F_Task
 
                 for (int i = 0; i < LstShow.Items.Count; i++)
                 {
-                    string Temp = LstShow.Items[i].ToString();
-                    if (Temp.Contains(TXTSearch.Text))
+                    string Temp = LstShow.Items[i].ToString(); // << Show The Orginal Name Of File
+                    string Temp2= LstShow.Items[i].ToString().ToLower(); // << For Search Item WithOut Uper And Lower Ruls
+                    if (Temp2.Contains(TXTSearch.Text))
                     {
                         FoundItem.Push(Temp);
                     }
@@ -66,7 +68,7 @@ namespace F_Task
                     LstShow.Items.Add(item);
                 }
             }
-            else if (TXTSearch.Text.Length <= 0)
+            else if (TXTSearch.Text.Length <= 1)
             {
                 LstShow.Items.Clear();
                 PushAll();
