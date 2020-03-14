@@ -12,3 +12,17 @@ c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F
 c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task.csproj.GenerateResource.Cache
 c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task.exe
 c:\users\loading\documents\visual studio 2015\Projects\F_Task\F_Task\obj\Debug\F_Task.pdb
+E:\Im Program This\F Task\F_Task\F_Task\bin\Debug\F_Task.exe.config
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\F_Task.exe
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\F_Task.pdb
+E:\Im Program This\F Task\F_Task\F_Task\bin\Debug\F_Task.exe
+E:\Im Program This\F Task\F_Task\F_Task\bin\Debug\F_Task.pdb
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\F_Task.csprojResolveAssemblyReference.cache
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\MainWindow.g.cs
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\App.g.cs
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\F_Task_MarkupCompile.cache
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\F_Task_MarkupCompile.lref
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\MainWindow.baml
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\F_Task.g.resources
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\F_Task.Properties.Resources.resources
+E:\Im Program This\F Task\F_Task\F_Task\obj\Debug\F_Task.csproj.GenerateResource.Cache

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:F_Task" 
         mc:Ignorable="d"
-        Title="MainWindow" Height="501.4" Width="523.2" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="MainWindow" Height="501.4" Width="523.2" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="icons8_road_closure.ico">
     <Grid Background="#313131" Margin="0,0,0,-0.012">
         <!--Search Box-->
         <TextBox  x:Name="TXTSearch" VerticalContentAlignment="Center" CaretBrush="#FFF" FontSize="25" Foreground="#FFF" BorderBrush="#48C9B0" Background="Transparent" Height="40" Margin="10,10,10,0" VerticalAlignment="Top" TextChanged="TXTSearch_TextChanged"/>
