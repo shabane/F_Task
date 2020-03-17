@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons8_road_closure.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("file/stopimg.png")]
 
 

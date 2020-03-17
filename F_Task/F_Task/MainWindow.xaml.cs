@@ -22,7 +22,7 @@ namespace F_Task
     /// </summary>
     public partial class MainWindow : Window
     {
-               
+
         public void PushAll() // < List All Task 
         {
             LstShow.Items.Clear();
@@ -54,7 +54,7 @@ namespace F_Task
                 for (int i = 0; i < LstShow.Items.Count; i++)
                 {
                     string Temp = LstShow.Items[i].ToString(); // << Show The Orginal Name Of File
-                    string Temp2= LstShow.Items[i].ToString().ToLower(); // << For Search Item WithOut Uper And Lower Ruls
+                    string Temp2 = LstShow.Items[i].ToString().ToLower(); // << For Search Item WithOut Uper And Lower Ruls
                     if (Temp2.Contains(TXTSearch.Text))
                     {
                         FoundItem.Push(Temp);
@@ -126,6 +126,59 @@ namespace F_Task
         private void RefreshLST(object sender, RoutedEventArgs e)
         {
             PushAll();
+        }
+
+        bool DoLoop = true; // << For Stop || Start The Looper Kill
+        // Looper Kill </>
+        private async void Looper_Kill(object sender, RoutedEventArgs e)
+        {
+            DoLoop = true;
+            string[] xx = LstShow.SelectedItem.ToString().Split('/');
+            string x = xx[0].Trim(' ');
+            lblLooper.Content = "Looper > " + x;
+            await Task.Run(() =>
+            {
+                while (DoLoop == true)
+                {
+                    try
+                    {
+                        foreach (var p in Process.GetProcessesByName(x))
+                        {
+                            p.Kill();
+                        }
+                    }
+                    catch { }
+                }
+            });
+
+            // in mozakhraf hang mikard mamam in joorish kardam  => \/___ /\
+            //string[] xx = LstShow.SelectedItem.ToString().Split('/');
+            //string x = xx[0].Trim(' ');
+            //lblLooper.Content = "Looper > " + x;
+            //while (true)
+            //{
+            //    try
+            //    {
+            //        foreach (var p in Process.GetProcessesByName(x))
+            //        {
+            //            p.Kill();
+            //        }
+            //    }
+            //    catch { }
+            //}
+        }
+        // Stop Looper Kill </>
+        private void Stop_Looper_Kill(object sender, RoutedEventArgs e)
+        {
+            if (DoLoop == true)
+            {
+                DoLoop = false;
+                lblLooper.Content = "No Looper Kill";
+            }
+            else
+            {
+                DoLoop = true;
+            }
         }
     }
 }

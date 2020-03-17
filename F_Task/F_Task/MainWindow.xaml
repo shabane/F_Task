@@ -5,25 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:F_Task" 
         mc:Ignorable="d"
-        Title="MainWindow" Height="501.4" Width="523.2" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="icons8_road_closure.ico">
+        Title="MainWindow" Height="596.4" Width="523.2" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="icons8_road_closure.ico">
     <Grid Background="#313131" Margin="0,0,0,-0.012">
+
         <!--Search Box-->
-        <TextBox  x:Name="TXTSearch" VerticalContentAlignment="Center" CaretBrush="#FFF" FontSize="25" Foreground="#FFF" BorderBrush="#48C9B0" Background="Transparent" Height="40" Margin="10,10,10,0" VerticalAlignment="Top" TextChanged="TXTSearch_TextChanged"/>
+        <TextBox  x:Name="TXTSearch" VerticalContentAlignment="Center" CaretBrush="#FFF" FontSize="25" Foreground="#FFF" BorderBrush="#48C9B0" Background="Transparent" Height="40" Margin="90,10,10,0" VerticalAlignment="Top" TextChanged="TXTSearch_TextChanged"/>
+        <Label BorderBrush="#138D75" BorderThickness="0.5" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFF" FontSize="15" Content="Search >" HorizontalAlignment="Left" Width="75"/>
+        <!--______-->
 
         <Label FontSize="14" Foreground="#FFF" Content="Name / PID" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="35" BorderThickness="0.5" BorderBrush="#F7DC6F" Margin="10,55,10,0" VerticalAlignment="Top"/>
-        
+
         <!--Show The Tasks-->
-        <ListBox  HorizontalContentAlignment="Center" BorderBrush="#008080" Foreground="#FFFFFF" Background="Transparent" x:Name="LstShow" Margin="10,95,10,10" FontSize="15">
+        <ListBox  HorizontalContentAlignment="Center" BorderBrush="#008080" Foreground="#FFFFFF" Background="Transparent" x:Name="LstShow" Margin="10,95,10,56.812" FontSize="15">
             <ListBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header=">_ Force Kill" Click="ForceKill"/>
                     <MenuItem Header=">_ Kill" Click="Kill"/>
                     <MenuItem Header="Kill All Proc With This Name" Click="LKbyName"/>
+                    <MenuItem Header="Loop Kill" Click="Looper_Kill"/>
                     <MenuItem Header="Refresh List" Click="RefreshLST"/>
-
                 </ContextMenu>
             </ListBox.ContextMenu>
         </ListBox>
+
+        <!--What Program is Looping-->
+        <Label x:Name="lblLooper" BorderBrush="#E74C3C" BorderThickness="0.5" Height="45" Margin="10,0,66.8,6.812" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFF" FontSize="20">No Looper Kill</Label>
+
+
+        <!--Stop The Loop-->
+        <Button Click="Stop_Looper_Kill" ToolTip="Stop Loop" Background="Transparent" HorizontalAlignment="Right" Height="45" VerticalAlignment="Bottom" Width="51.8"  FontSize="30" Foreground="#FFF" BorderBrush="#E74C3C" Margin="0,0,10,6.812">
+            <Grid>
+                <Image Source="File/stopimg.png"/>
+            </Grid>
+        </Button>
 
     </Grid>
 </Window>
